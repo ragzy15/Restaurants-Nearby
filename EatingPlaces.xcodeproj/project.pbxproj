@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADCDF49D21E75A6B00D54E9D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCDF49C21E75A6B00D54E9D /* TableViewController.swift */; };
 		ADDD065F21E4EF2B002BD479 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDD065E21E4EF2B002BD479 /* AppDelegate.swift */; };
 		ADDD066121E4EF2B002BD479 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDD066021E4EF2B002BD479 /* ViewController.swift */; };
 		ADDD066421E4EF2B002BD479 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADDD066221E4EF2B002BD479 /* Main.storyboard */; };
 		ADDD066621E4EF2D002BD479 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADDD066521E4EF2D002BD479 /* Assets.xcassets */; };
 		ADDD066921E4EF2D002BD479 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADDD066721E4EF2D002BD479 /* LaunchScreen.storyboard */; };
+		ADE61E8221E540F100582D38 /* NearbyPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE61E8121E540F100582D38 /* NearbyPlaces.swift */; };
+		ADE61E8421E5447C00582D38 /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE61E8321E5447C00582D38 /* Places.swift */; };
+		DC331F37918BC12D36480BE8 /* Pods_EatingPlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438578BDC35433E963B073DA /* Pods_EatingPlaces.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		438578BDC35433E963B073DA /* Pods_EatingPlaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EatingPlaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F518A2B16C18B8D60C7835D /* Pods-EatingPlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatingPlaces.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EatingPlaces/Pods-EatingPlaces.debug.xcconfig"; sourceTree = "<group>"; };
+		ADCDF49C21E75A6B00D54E9D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		ADDD065B21E4EF2B002BD479 /* EatingPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatingPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADDD065E21E4EF2B002BD479 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADDD066021E4EF2B002BD479 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,9 @@
 		ADDD066521E4EF2D002BD479 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADDD066821E4EF2D002BD479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADDD066A21E4EF2D002BD479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADE61E8121E540F100582D38 /* NearbyPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPlaces.swift; sourceTree = "<group>"; };
+		ADE61E8321E5447C00582D38 /* Places.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
+		DAAF313B088EBFA99CE35863 /* Pods-EatingPlaces.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatingPlaces.release.xcconfig"; path = "Pods/Target Support Files/Pods-EatingPlaces/Pods-EatingPlaces.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC331F37918BC12D36480BE8 /* Pods_EatingPlaces.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		047A568FA0261E816D362ADD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438578BDC35433E963B073DA /* Pods_EatingPlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62829756DEF63FEE3FB08401 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F518A2B16C18B8D60C7835D /* Pods-EatingPlaces.debug.xcconfig */,
+				DAAF313B088EBFA99CE35863 /* Pods-EatingPlaces.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ADCDF49B21E75A5500D54E9D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ADDD066021E4EF2B002BD479 /* ViewController.swift */,
+				ADCDF49C21E75A6B00D54E9D /* TableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		ADDD065221E4EF2B002BD479 = {
 			isa = PBXGroup;
 			children = (
 				ADDD065D21E4EF2B002BD479 /* EatingPlaces */,
 				ADDD065C21E4EF2B002BD479 /* Products */,
+				62829756DEF63FEE3FB08401 /* Pods */,
+				047A568FA0261E816D362ADD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +94,23 @@
 			isa = PBXGroup;
 			children = (
 				ADDD065E21E4EF2B002BD479 /* AppDelegate.swift */,
-				ADDD066021E4EF2B002BD479 /* ViewController.swift */,
+				ADE61E8021E540D400582D38 /* Model */,
+				ADCDF49B21E75A5500D54E9D /* Controller */,
 				ADDD066221E4EF2B002BD479 /* Main.storyboard */,
 				ADDD066521E4EF2D002BD479 /* Assets.xcassets */,
 				ADDD066721E4EF2D002BD479 /* LaunchScreen.storyboard */,
 				ADDD066A21E4EF2D002BD479 /* Info.plist */,
 			);
 			path = EatingPlaces;
+			sourceTree = "<group>";
+		};
+		ADE61E8021E540D400582D38 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ADE61E8121E540F100582D38 /* NearbyPlaces.swift */,
+				ADE61E8321E5447C00582D38 /* Places.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADDD066D21E4EF2D002BD479 /* Build configuration list for PBXNativeTarget "EatingPlaces" */;
 			buildPhases = (
+				2FB03B1345FB3C8903503F0C /* [CP] Check Pods Manifest.lock */,
 				ADDD065721E4EF2B002BD479 /* Sources */,
 				ADDD065821E4EF2B002BD479 /* Frameworks */,
 				ADDD065921E4EF2B002BD479 /* Resources */,
+				3168FFB9813FC975097B9007 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,13 +181,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2FB03B1345FB3C8903503F0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EatingPlaces-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3168FFB9813FC975097B9007 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EatingPlaces/Pods-EatingPlaces-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EatingPlaces/Pods-EatingPlaces-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ADDD065721E4EF2B002BD479 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				ADDD066121E4EF2B002BD479 /* ViewController.swift in Sources */,
+				ADE61E8221E540F100582D38 /* NearbyPlaces.swift in Sources */,
 				ADDD065F21E4EF2B002BD479 /* AppDelegate.swift in Sources */,
+				ADCDF49D21E75A6B00D54E9D /* TableViewController.swift in Sources */,
+				ADE61E8421E5447C00582D38 /* Places.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,10 +381,12 @@
 		};
 		ADDD066E21E4EF2D002BD479 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F518A2B16C18B8D60C7835D /* Pods-EatingPlaces.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = EatingPlaces/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,10 +400,12 @@
 		};
 		ADDD066F21E4EF2D002BD479 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAAF313B088EBFA99CE35863 /* Pods-EatingPlaces.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = EatingPlaces/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
