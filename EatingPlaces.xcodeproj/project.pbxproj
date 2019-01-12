@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ADCDF49D21E75A6B00D54E9D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCDF49C21E75A6B00D54E9D /* TableViewController.swift */; };
+		ADDBCE3121EA53A000393099 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDBCE3021EA53A000393099 /* InfoView.swift */; };
 		ADDD065F21E4EF2B002BD479 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDD065E21E4EF2B002BD479 /* AppDelegate.swift */; };
 		ADDD066121E4EF2B002BD479 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDD066021E4EF2B002BD479 /* ViewController.swift */; };
 		ADDD066421E4EF2B002BD479 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADDD066221E4EF2B002BD479 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		438578BDC35433E963B073DA /* Pods_EatingPlaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EatingPlaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F518A2B16C18B8D60C7835D /* Pods-EatingPlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatingPlaces.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EatingPlaces/Pods-EatingPlaces.debug.xcconfig"; sourceTree = "<group>"; };
 		ADCDF49C21E75A6B00D54E9D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		ADDBCE3021EA53A000393099 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		ADDD065B21E4EF2B002BD479 /* EatingPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatingPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADDD065E21E4EF2B002BD479 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADDD066021E4EF2B002BD479 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,25 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		ADDBCE2C21EA536700393099 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADDBCE3021EA53A000393099 /* InfoView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ADDBCE2D21EA537600393099 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ADDD066221E4EF2B002BD479 /* Main.storyboard */,
+				ADDD066521E4EF2D002BD479 /* Assets.xcassets */,
+				ADDD066721E4EF2D002BD479 /* LaunchScreen.storyboard */,
+				ADDD066A21E4EF2D002BD479 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		ADDD065221E4EF2B002BD479 = {
 			isa = PBXGroup;
 			children = (
@@ -95,11 +116,9 @@
 			children = (
 				ADDD065E21E4EF2B002BD479 /* AppDelegate.swift */,
 				ADE61E8021E540D400582D38 /* Model */,
+				ADDBCE2C21EA536700393099 /* View */,
 				ADCDF49B21E75A5500D54E9D /* Controller */,
-				ADDD066221E4EF2B002BD479 /* Main.storyboard */,
-				ADDD066521E4EF2D002BD479 /* Assets.xcassets */,
-				ADDD066721E4EF2D002BD479 /* LaunchScreen.storyboard */,
-				ADDD066A21E4EF2D002BD479 /* Info.plist */,
+				ADDBCE2D21EA537600393099 /* Resources */,
 			);
 			path = EatingPlaces;
 			sourceTree = "<group>";
@@ -237,6 +256,7 @@
 				ADE61E8221E540F100582D38 /* NearbyPlaces.swift in Sources */,
 				ADDD065F21E4EF2B002BD479 /* AppDelegate.swift in Sources */,
 				ADCDF49D21E75A6B00D54E9D /* TableViewController.swift in Sources */,
+				ADDBCE3121EA53A000393099 /* InfoView.swift in Sources */,
 				ADE61E8421E5447C00582D38 /* Places.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,7 +405,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = EatingPlaces/Info.plist;
+				DEVELOPMENT_TEAM = V69YE6TK8T;
+				INFOPLIST_FILE = "$(SRCROOT)/EatingPlaces/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -404,7 +425,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = EatingPlaces/Info.plist;
+				DEVELOPMENT_TEAM = V69YE6TK8T;
+				INFOPLIST_FILE = "$(SRCROOT)/EatingPlaces/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

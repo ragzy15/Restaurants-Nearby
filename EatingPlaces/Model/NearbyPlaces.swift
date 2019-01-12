@@ -33,7 +33,7 @@ class NearbyPlaces {
     }
     
     func fetchRestuarants(near coordinate: CLLocationCoordinate2D, radius: Float, completion: @escaping PlaceCompletion) {
-        let urlString = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=\(coordinate.latitude),\(coordinate.longitude)&radius=\(radius)&rankby=prominence&sensor=true&key=\(mapAPIKey)"
+        let urlString = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=\(coordinate.latitude),\(coordinate.longitude)&radius=\(radius)&rankby=prominence&sensor=true&type=restaurant&key=\(mapAPIKey)"
         guard let url = URL(string: urlString) else {
             return
         }
@@ -55,13 +55,11 @@ class NearbyPlaces {
     
     private func decode<T: Decodable>(type: T.Type, data: Data) -> T? {
         do {
-//            print(try? JSONSerialization.jsonObject(with: data, options: []))
             let result = try JSONDecoder().decode(T.self, from: data)
             print(result)
             return result
         } catch {
             print(error)
-            print("")
         }
         return nil
     }

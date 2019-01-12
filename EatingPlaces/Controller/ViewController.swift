@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         locationManager.requestWhenInUseAuthorization()
         mapView.isMyLocationEnabled = true
         mapView.settings.myLocationButton = true
+        mapView.delegate = self
     }
     
     @IBAction private func listButtonPressed(_ sender: Any) {
@@ -64,5 +65,17 @@ extension ViewController: CLLocationManagerDelegate {
                 self.model.markPlaces(places: places, in: self.mapView)
             }
         }
+    }
+}
+
+extension ViewController: GMSMapViewDelegate {
+    func mapView(_ mapView: GMSMapView, markerInfoContents marker: GMSMarker) -> UIView? {
+        guard let placeMarker = marker as? PlaceMarker else {
+            return nil
+        }
+        let infoView = InfoView()
+        infoView.frame = CGRect(x: 0, y: 0, width: 200, height: 80)
+        infoView.setLocation(place: placeMarker.place)
+        return infoView
     }
 }
